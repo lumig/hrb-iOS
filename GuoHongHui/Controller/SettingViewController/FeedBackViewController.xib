@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedBackViewController">
+            <connections>
+                <outlet property="TextView" destination="4e0-Ro-O1T" id="sYL-32-cUQ"/>
+                <outlet property="placeholderLabel" destination="Vma-yZ-y9J" id="Jp7-bL-ORU"/>
+                <outlet property="submitBtn" destination="Dwz-ad-uog" id="1hH-Zb-Ty2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="input.png" translatesAutoresizingMaskIntoConstraints="NO" id="Um0-AX-wgw">
+                    <rect key="frame" x="0.0" y="60" width="320" height="160"/>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4e0-Ro-O1T">
+                    <rect key="frame" x="0.0" y="64" width="320" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="r6s-UF-lE4"/>
+                    </constraints>
+                    <inset key="scrollIndicatorInsets" minX="0.0" minY="64" maxX="0.0" maxY="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwz-ad-uog">
+                    <rect key="frame" x="20" y="250" width="280" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="VuN-YV-iXr"/>
+                    </constraints>
+                    <state key="normal" title="提交" backgroundImage="button_04.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="SubmitClick:" destination="-1" eventType="touchUpInside" id="N33-fd-ziL"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请留下您的宝贵意见和建议" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vma-yZ-y9J">
+                    <rect key="frame" x="10" y="74" width="170" height="17"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Vma-yZ-y9J" secondAttribute="trailing" constant="140" id="1Hc-Gy-xXh"/>
+                <constraint firstAttribute="trailing" secondItem="Um0-AX-wgw" secondAttribute="trailing" id="56p-eO-tfe"/>
+                <constraint firstItem="Um0-AX-wgw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="BY4-fc-qE1"/>
+                <constraint firstItem="4e0-Ro-O1T" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Bus-V9-2uX"/>
+                <constraint firstItem="Dwz-ad-uog" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="JZU-hc-juo"/>
+                <constraint firstItem="Dwz-ad-uog" firstAttribute="top" secondItem="Um0-AX-wgw" secondAttribute="bottom" constant="30" id="LpZ-Cd-9TR"/>
+                <constraint firstItem="Vma-yZ-y9J" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="M0I-AZ-Grh"/>
+                <constraint firstItem="4e0-Ro-O1T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mn2-ha-FPg"/>
+                <constraint firstItem="Um0-AX-wgw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PmH-a1-Lmp"/>
+                <constraint firstItem="Dwz-ad-uog" firstAttribute="top" secondItem="4e0-Ro-O1T" secondAttribute="bottom" constant="36" id="StN-Az-NpH"/>
+                <constraint firstAttribute="trailing" secondItem="Dwz-ad-uog" secondAttribute="trailing" constant="20" id="ViS-js-sjd"/>
+                <constraint firstItem="4e0-Ro-O1T" firstAttribute="leading" secondItem="Vma-yZ-y9J" secondAttribute="leading" constant="-10" id="X0X-VI-EXy"/>
+                <constraint firstAttribute="trailing" secondItem="4e0-Ro-O1T" secondAttribute="trailing" id="trm-eM-Vtj"/>
+            </constraints>
+            <point key="canvasLocation" x="410" y="250"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_04.png" width="355" height="44"/>
+        <image name="input.png" width="375" height="89"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

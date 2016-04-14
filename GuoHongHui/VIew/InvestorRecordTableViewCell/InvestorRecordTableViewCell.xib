@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="InvestorRecordTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投资人" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkc-e9-rYp">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="G2G-LH-w7B"/>
+                            <constraint firstAttribute="width" constant="100" id="mlD-CV-Tcf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投资日期" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfV-b9-s2d">
+                        <rect key="frame" x="220" y="0.0" width="100" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Qfh-eQ-w5S"/>
+                            <constraint firstAttribute="width" constant="100" id="trf-ub-cbH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uhc-rK-cpN">
+                        <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="enT-cE-hb9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金额(元)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1g-Hb-sRh">
+                        <rect key="frame" x="100" y="0.0" width="120" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="AgJ-ME-uzS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="x1g-Hb-sRh" firstAttribute="leading" secondItem="Mkc-e9-rYp" secondAttribute="trailing" id="A3e-bj-sr6"/>
+                    <constraint firstItem="PfV-b9-s2d" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="M9F-0S-v84"/>
+                    <constraint firstItem="Mkc-e9-rYp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WZL-lK-0Ad"/>
+                    <constraint firstItem="PfV-b9-s2d" firstAttribute="leading" secondItem="x1g-Hb-sRh" secondAttribute="trailing" id="Z3l-QE-BZo"/>
+                    <constraint firstItem="Mkc-e9-rYp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cha-rs-n9l"/>
+                    <constraint firstItem="Uhc-rK-cpN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="i1E-tY-TdK"/>
+                    <constraint firstItem="Uhc-rK-cpN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="43" id="ig1-Wa-8s7"/>
+                    <constraint firstAttribute="trailing" secondItem="Uhc-rK-cpN" secondAttribute="trailing" id="jD0-fb-FEb"/>
+                    <constraint firstItem="x1g-Hb-sRh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rAC-Ve-6vY"/>
+                    <constraint firstAttribute="trailing" secondItem="PfV-b9-s2d" secondAttribute="trailing" id="ssK-il-MbQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="amoutLabel" destination="x1g-Hb-sRh" id="kjv-fW-mS2"/>
+                <outlet property="investorLabel" destination="Mkc-e9-rYp" id="r6v-ro-gYZ"/>
+                <outlet property="recordLabel" destination="PfV-b9-s2d" id="QVg-gM-jj6"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="line_01.png" width="375" height="1"/>
+    </resources>
+</document>

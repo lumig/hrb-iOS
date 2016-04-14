@@ -1,0 +1,127 @@
+//
+//  GuoHongHui-Prefix.pch
+//  GuoHongHui
+//
+//  Created by LuMig on 15/5/5.
+//  Copyright (c) 2015年 LuMig. All rights reserved.
+//
+
+
+#ifndef GuoHongHui_GuoHongHui_Prefix_pch
+
+#ifdef __OBJC__
+#import "MBProgressHUD.h"
+#import "UIViewController+HUD.h"
+#import "AFNetworking.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "UIImageView+AFNetworking.h"
+#import "AFHTTPSessionManager.h"
+#import "FMDatabase.h"
+#import "UserMessageDataBase.h"
+#import "TTGlobalUICommon.h"
+#import "UIViewController+DismissKeyboard.h"
+#import "NSString+Valid.h"
+#import "LoginViewController.h"
+#import "NavViewController.h"
+
+#import "AddressModel.h"
+#import "UserInfo.h"
+
+#endif
+
+
+//#define TTAlert (msg) UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];\
+//[alert show];
+
+#define GuoHongHui_GuoHongHui_Prefix_pch
+#define __kDWAllModel(key) @property(nonatomic,copy)NSString* key
+
+#define ZOOM_SCALE  (float)([[UIScreen mainScreen] bounds].size.height/667.0)
+#define WIDTH_ZOOM_SCALE (float)([[UIScreen mainScreen] bounds].size.width/375.0)
+
+#define FRAME_WIDTH     [[UIScreen mainScreen] bounds].size.width
+#define FRAME_HEIGHT    [[UIScreen mainScreen] bounds].size.height
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+//字体设置
+#define FONT20  SCREEN_WIDTH==320.0?[UIFont systemFontOfSize:18]:(SCREEN_WIDTH==375.0?[UIFont systemFontOfSize:20]:[UIFont systemFontOfSize:21])
+
+#define FONT18  SCREEN_WIDTH==320.0?[UIFont systemFontOfSize:16]:(SCREEN_WIDTH==375.0?[UIFont systemFontOfSize:17]:[UIFont systemFontOfSize:19])
+#define FONT17  SCREEN_WIDTH==320.0?[UIFont systemFontOfSize:15]:(SCREEN_WIDTH==375.0?[UIFont systemFontOfSize:17]:[UIFont systemFontOfSize:18])
+#define FONT16  SCREEN_WIDTH==320.0?[UIFont systemFontOfSize:14]:SCREEN_WIDTH==375.0?[UIFont systemFontOfSize:16]:[UIFont systemFontOfSize:17]
+#define FONT15  SCREEN_WIDTH==320.0?[UIFont systemFontOfSize:13]:SCREEN_WIDTH==375.0?[UIFont systemFontOfSize:15]:[UIFont systemFontOfSize:16]
+#define FONT14  SCREEN_WIDTH==320.0?[UIFont systemFontOfSize:12]:(SCREEN_WIDTH==375.0?[UIFont systemFontOfSize:14]:[UIFont systemFontOfSize:15])
+#define FONT13  SCREEN_WIDTH==320.0?[UIFont systemFontOfSize:11]:SCREEN_WIDTH==375.0?[UIFont systemFontOfSize:13]:[UIFont systemFontOfSize:14]
+#define FONT12  SCREEN_WIDTH==320.0?[UIFont systemFontOfSize:10]:SCREEN_WIDTH==375.0?[UIFont systemFontOfSize:12]:[UIFont systemFontOfSize:13]
+#define FONT11  SCREEN_WIDTH==320.0?[UIFont systemFontOfSize:9]:SCREEN_WIDTH==375.0?[UIFont systemFontOfSize:11]:[UIFont systemFontOfSize:12]
+#define FONT10  SCREEN_WIDTH==320.0?[UIFont systemFontOfSize:9]:SCREEN_WIDTH==375.0?[UIFont systemFontOfSize:10]:[UIFont systemFontOfSize:11]
+
+#define iphone [[UIScreen mainScreen] bounds].size
+
+
+#define SHOW_ALERT(msg) UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];\
+[alert show];
+
+#define DEVICE SCREEN_WIDTH==320.0?@"other":SCREEN_WIDTH==375.0?@"iphone6":@"iphone6 plus"
+#define DEVICEHHEIGHT SCREEN_HEIGHT==480.0?@"iphone4":SCREEN_HEIGHT==568.0?@"iphone5":SCREEN_HEIGHT==667.0?@"iphone6":@"iphone6 plus"
+
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#define GH_COLORA(R,G,B,A) [UIColor colorWithRed:(R) green:(G) blue:(B) alpha:(A)]
+#define GH_COLOR(R,G,B)             GH_COLORA(R,G,B,1.0f)
+
+#define GHDEFALUTIMAGE [UIImage imageNamed:@"placeholderDefault.png"]
+#define GHSMALLIMAGE [UIImage imageNamed:@"placeholderSmallDefault.png"]
+
+//请求地址
+/*
+外网
+ */
+#define urlStr(str)  [NSString stringWithFormat:@"http://ghhapp.api.guohgroup.com:8090/hrb-service/%@",(str)]
+
+//#define urlStr(str)  [NSString stringWithFormat:@"http://222.175.100.5:8090/hrb-service/%@",(str)]
+//上海地址
+//#define urlStr(str)  [NSString stringWithFormat:@"http://211.161.200.109:8090/hrb-service/%@",(str)]
+
+//本地
+//#define urlStr(str)  [NSString stringWithFormat:@"http://10.16.57.39:8080/hrb-service/%@",(str)]
+
+
+  
+//显示右上方标签颜色
+#define COLOR_BADGE                 GH_COLOR(0.96f,0.57f,0.19f)
+
+//设置导航栏背景色
+#define  NAV_Color RGBACOLOR(199,0,5,1)
+//设置全局背景色——灰色
+#define GLOBAL_GrayColor RGBACOLOR(236, 236, 236, 1)
+//设置全局红色
+#define GLOBAL_RedColor RGBACOLOR(215, 29, 25, 1)
+#define GLOBAL_GREEN   GH_COLOR(0.54f,0.75f,0.28f)
+
+#define kGap (SCREEN_WIDTH==320.0 ? 5:5)
+
+
+//设置tabbar
+#define TOPBACKGOUDCOLOR [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1]
+
+/* 首页活动router */
+#define GHActivtity_ROUTEREVENT @"kRouterEventActivtityTapEventName"
+
+#define GHHOMEGOODS_ROUTEREVENT   @"kRouterEventHomeGoodsTapEventName"
+
+#define GHPROJECTLIST_ROUTEREVENT   @"kRouterEventProjectListTapEventName"
+
+/* 友盟统计appkey */
+#define kUmengAppKey @"55628dda67e58e1bd90019a9"
+
+
+#pragma mark -- SMS三方登录key
+#define SMSAppKey               @"74d481b2a074"
+#define SMSaAppSecret            @"324b2726a2b0d40681342ac755770b53"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif

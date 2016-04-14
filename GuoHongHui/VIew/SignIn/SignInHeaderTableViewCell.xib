@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SignInHeaderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="i_piggybank.png" translatesAutoresizingMaskIntoConstraints="NO" id="feb-Y7-Ato">
+                        <rect key="frame" x="10" y="24" width="36" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="5B2-NG-bzS"/>
+                            <constraint firstAttribute="height" constant="36" id="DiI-Sg-Ryc"/>
+                            <constraint firstAttribute="height" constant="35" id="inC-EI-aLT"/>
+                            <constraint firstAttribute="width" constant="36" id="xxb-np-Pg4"/>
+                            <constraint firstAttribute="width" constant="36" id="yhm-2i-NrC"/>
+                            <constraint firstAttribute="height" constant="36" id="zSY-Hl-eW8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5B2-NG-bzS"/>
+                                <exclude reference="DiI-Sg-Ryc"/>
+                                <exclude reference="xxb-np-Pg4"/>
+                                <exclude reference="zSY-Hl-eW8"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现有惠金币:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pie-y8-YSb">
+                        <rect key="frame" x="54" y="19" width="90" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftK-VL-ACl">
+                        <rect key="frame" x="152" y="20" width="54" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可用于换购" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZg-2k-HSn">
+                        <rect key="frame" x="54" y="47" width="70" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bug-FU-6QG">
+                        <rect key="frame" x="220" y="16" width="90" height="55"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="7vt-pV-nQ8"/>
+                            <constraint firstAttribute="height" constant="55" id="N7E-B6-WJL"/>
+                            <constraint firstAttribute="height" constant="55" id="XBs-kv-dH1"/>
+                            <constraint firstAttribute="width" constant="90" id="xxz-Jx-5Qs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="N7E-B6-WJL"/>
+                                <exclude reference="XBs-kv-dH1"/>
+                                <exclude reference="xxz-Jx-5Qs"/>
+                            </mask>
+                        </variation>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Bug-FU-6QG" secondAttribute="bottom" constant="6" id="02q-LG-rJt"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="wZg-2k-HSn" secondAttribute="bottom" constant="12" id="51u-RT-cPO"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Pie-y8-YSb" secondAttribute="bottom" constant="37" id="C9G-WS-JC3"/>
+                    <constraint firstItem="Pie-y8-YSb" firstAttribute="leading" secondItem="feb-Y7-Ato" secondAttribute="trailing" constant="8" id="CIn-T6-bYN"/>
+                    <constraint firstItem="feb-Y7-Ato" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="HUe-OV-sps"/>
+                    <constraint firstItem="Bug-FU-6QG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="Kq4-sB-kpB"/>
+                    <constraint firstItem="wZg-2k-HSn" firstAttribute="top" secondItem="Pie-y8-YSb" secondAttribute="bottom" constant="8" id="OXk-Te-j1O"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Bug-FU-6QG" secondAttribute="trailing" constant="2" id="OZM-Vk-glZ"/>
+                    <constraint firstItem="ftK-VL-ACl" firstAttribute="leading" secondItem="Pie-y8-YSb" secondAttribute="trailing" constant="8" id="PiS-gm-dax"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="feb-Y7-Ato" secondAttribute="bottom" constant="17" id="Vj4-jK-cHH"/>
+                    <constraint firstItem="Pie-y8-YSb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="fEs-af-kdT"/>
+                    <constraint firstItem="Bug-FU-6QG" firstAttribute="leading" secondItem="ftK-VL-ACl" secondAttribute="trailing" constant="14" id="fec-3J-Lxq"/>
+                    <constraint firstAttribute="trailing" secondItem="feb-Y7-Ato" secondAttribute="trailing" constant="274" id="nqd-it-x9I"/>
+                    <constraint firstItem="Bug-FU-6QG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="pEc-Wg-m4b"/>
+                    <constraint firstItem="Bug-FU-6QG" firstAttribute="leading" secondItem="wZg-2k-HSn" secondAttribute="trailing" constant="96" id="tAX-oR-eHw"/>
+                    <constraint firstItem="ftK-VL-ACl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="vw0-tM-7fQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Bug-FU-6QG" secondAttribute="bottom" constant="5" id="x4I-Q7-Ord"/>
+                    <constraint firstItem="wZg-2k-HSn" firstAttribute="leading" secondItem="feb-Y7-Ato" secondAttribute="trailing" constant="8" id="y0A-mz-Jr3"/>
+                    <constraint firstItem="feb-Y7-Ato" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="yL1-a5-qiE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ftK-VL-ACl" secondAttribute="bottom" constant="36" id="yZi-d7-cuC"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Vj4-jK-cHH"/>
+                        <exclude reference="nqd-it-x9I"/>
+                        <exclude reference="02q-LG-rJt"/>
+                        <exclude reference="pEc-Wg-m4b"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="huiCodeLabel" destination="ftK-VL-ACl" id="8dy-FH-7ki"/>
+                <outlet property="titleBtn" destination="Bug-FU-6QG" id="nKc-Zd-Zub"/>
+            </connections>
+            <point key="canvasLocation" x="281" y="305.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="i_piggybank.png" width="36" height="33"/>
+    </resources>
+</document>
